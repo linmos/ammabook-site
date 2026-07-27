@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmmaBook 隱私政策</title>
+<meta name="description" content="AmmaBook 個人記帳 App 的隱私政策：不收集任何資料，帳本只存在你的裝置與你自己的 iCloud。">
+<style>
+  /* 存摺配色，與 App 一致；單檔自足、不外連字型或 CSS（離線與審核時都必定可讀）。 */
+  :root {
+    --paper: #f2f4f3;
+    --card: #ffffff;
+    --ink: #1e2b33;
+    --ink2: #5b6b72;
+    --rule: #dce2df;
+    --teal: #2e6e5e;
+    --red: #c0392b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161c20;
+      --card: #1e262b;
+      --ink: #e8edea;
+      --ink2: #a3b1b0;
+      --rule: #2f3b40;
+      --teal: #6fbfa6;
+      --red: #e2796a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei",
+      -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header {
+    padding: 56px 0 20px;
+    border-bottom: 2px solid var(--teal);
+    margin-bottom: 8px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: .22em;
+    color: var(--ink2);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  h1 { font-size: 28px; line-height: 1.4; margin: 0; letter-spacing: .02em; }
+  .updated { color: var(--ink2); font-size: 14px; margin: 12px 0 0; }
+  h2 {
+    font-size: 18px;
+    margin: 40px 0 12px;
+    padding-left: 12px;
+    border-left: 4px solid var(--teal);
+    line-height: 1.5;
+  }
+  p { margin: 0 0 14px; }
+  strong { color: var(--red); font-weight: 600; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  li strong { color: var(--ink); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 0 0 14px;
+  }
+  a { color: var(--teal); }
+  .email { color: var(--teal); white-space: nowrap; }
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink2);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">AmmaBook</p>
+    <h1>隱私政策</h1>
+    <p class="updated">最後更新：2026-07-26</p>
+  </header>
+
+  <h2>我們收集哪些資料</h2>
+  <div class="card">
+    <p><strong>不收集任何資料。</strong></p>
+    <p>AmmaBook 沒有帳號、沒有註冊流程、沒有伺服器。開發者無法看到、也無法取得你的任何記帳內容。</p>
+  </div>
+
+  <h2>你的資料存在哪裡</h2>
+  <ul>
+    <li><strong>裝置本機</strong>：你輸入的記帳項目、每月金額、現金明細與分類，存在 App 於裝置上的資料庫中。刪除 App 即刪除這些資料。</li>
+    <li><strong>你自己的 iCloud</strong>（僅在你使用備份功能時）：備份會寫入你 Apple ID 的 iCloud 鍵值儲存空間，屬於你的 iCloud 帳戶，受 Apple 的隱私政策保護。開發者無權存取。</li>
+    <li><strong>你自行匯出的檔案</strong>：使用 Excel 匯出功能時，檔案由你決定要存到哪裡或分享給誰。</li>
+  </ul>
+
+  <h2>通知</h2>
+  <p>出帳日／發薪日提醒是<strong>裝置端的本地通知</strong>，由 App 在你的裝置上排程，不經過任何推播伺服器，也不會傳送任何資料到外部。</p>
+
+  <h2>第三方</h2>
+  <p>App 不含廣告、不含分析或追蹤工具，不使用廣告識別碼（IDFA），也不會把資料傳送給任何第三方。</p>
+
+  <h2>兒童隱私</h2>
+  <p>App 不收集資料，因此不會收集兒童的個人資料。</p>
+
+  <h2>政策變更</h2>
+  <p>若本政策有變更，會更新本頁最上方的「最後更新」日期。</p>
+
+  <h2>聯絡方式</h2>
+  <!-- 刻意不用 mailto 連結、以 [at] 取代 @：降低被爬蟲收走的機率（Apple 不要求可點擊）。 -->
+  <p>有任何疑問請寄信到：<span class="email">lym520 [at] gmail.com</span></p>
+
+  <footer>
+    AmmaBook · 個人記帳 App · 本頁為 App Store 送審所需的隱私政策
+  </footer>
+</main>
+</body>
+</html>
