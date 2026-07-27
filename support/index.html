@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmmaBook 支援</title>
+<meta name="description" content="AmmaBook 個人記帳 App 的支援頁面：常見問題與聯絡方式。">
+<style>
+  /* 與隱私政策頁同一套存摺配色；單檔自足、不外連任何資源。 */
+  :root {
+    --paper: #f2f4f3;
+    --card: #ffffff;
+    --ink: #1e2b33;
+    --ink2: #5b6b72;
+    --rule: #dce2df;
+    --teal: #2e6e5e;
+    --red: #c0392b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161c20;
+      --card: #1e262b;
+      --ink: #e8edea;
+      --ink2: #a3b1b0;
+      --rule: #2f3b40;
+      --teal: #6fbfa6;
+      --red: #e2796a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei",
+      -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header {
+    padding: 56px 0 20px;
+    border-bottom: 2px solid var(--teal);
+    margin-bottom: 8px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: .22em;
+    color: var(--ink2);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  h1 { font-size: 28px; line-height: 1.4; margin: 0; letter-spacing: .02em; }
+  .lede { color: var(--ink2); font-size: 15px; margin: 12px 0 0; }
+  h2 {
+    font-size: 18px;
+    margin: 40px 0 12px;
+    padding-left: 12px;
+    border-left: 4px solid var(--teal);
+    line-height: 1.5;
+  }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  p { margin: 0 0 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 0 0 14px;
+  }
+  a { color: var(--teal); }
+  .email { color: var(--teal); white-space: nowrap; }
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink2);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">AmmaBook</p>
+    <h1>支援</h1>
+    <p class="lede">每月固定收支一頁填完、現金零花逐筆記、月底自動結算的個人記帳 App。</p>
+  </header>
+
+  <h2>聯絡方式</h2>
+  <div class="card">
+    <p>使用上有問題、發現錯誤或想建議功能，請寄信到：<br>
+    <!-- 刻意不用 mailto 連結、以 [at] 取代 @：降低被爬蟲收走的機率。 -->
+    <span class="email">lym520 [at] gmail.com</span></p>
+    <p style="margin:0;color:var(--ink2);font-size:14px;">
+      信件通常在數個工作天內回覆。回報問題時，附上 iOS 版本與操作步驟會更快找到原因。</p>
+  </div>
+
+  <h2>常見問題</h2>
+
+  <h3>我的記帳資料存在哪裡？</h3>
+  <p>存在你手機裡的 App 資料庫。App 沒有帳號、沒有伺服器，開發者看不到你的任何內容。
+  詳見<a href="../">隱私政策</a>。</p>
+
+  <h3>換手機時資料會不見嗎？</h3>
+  <p>到「設定 → iCloud 備份 → 立即備份」把帳本備份到你自己的 iCloud，
+  新手機裝好 App 後用同一個 Apple ID 登入 iCloud，再選「從 iCloud 還原」即可。
+  還原會以雲端的備份完整覆蓋手機上的資料，請在確認過備份時間後再執行。</p>
+
+  <h3>沒有收到出帳日／發薪日提醒？</h3>
+  <p>請確認三件事：（1）iOS「設定 → 通知 → AmmaBook」已允許通知；
+  （2）App 內「設定 → 提醒通知」顯示為「已開啟」；
+  （3）該項目在「項目管理」裡有設定提醒日。提醒會在提醒日當天上午 9:00 發出；
+  若當月沒有該日（例如 2 月選了 31 日），會改在當月最後一天提醒。</p>
+
+  <h3>可以自己新增或刪除收支項目嗎？</h3>
+  <p>可以。「設定 → 項目管理」能新增、更名、設定提醒日、拖曳排序。
+  已經有記帳資料的項目不能刪除（會影響歷史月報），請改用「封存」——
+  封存後不再出現在填寫清單，但過去的月報不受影響。</p>
+
+  <h3>月報裡的「移轉」是什麼？</h3>
+  <p>定存、存股、儲蓄險這類「錢只是換個地方放」的支出，可以在項目上標記為移轉。
+  月報會把它和真實消費分開小計，讓你看得出這個月實際花掉多少。</p>
+
+  <h3>要怎麼刪除全部資料？</h3>
+  <p>直接刪除 App 即可清除手機上的所有記帳資料。
+  若你曾備份到 iCloud，可在 iOS「設定 →〈你的名字〉→ iCloud」中管理該筆備份資料。</p>
+
+  <footer>
+    AmmaBook · 個人記帳 App · <a href="../">隱私政策</a>
+  </footer>
+</main>
+</body>
+</html>
